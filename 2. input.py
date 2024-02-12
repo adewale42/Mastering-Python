@@ -5,15 +5,12 @@ def get_numbers():
     input_string = input("Type your numbers here:")
     # Convert the input_string to a list of strings by splitting it into separate strings using split()
     # Save it in the list_of_string variable
-    list_of_string = input_string.split()
-    print ("Your list of strings are:", list_of_string)
-    print(type(list_of_string))
+    list_of_strings = input_string.split()
     # Convert the list of strings to list of numbers by using the int() method
     # Save it in the numbers variable
-    numbers = [int(num) for num in list_of_string]
+    numbers = [int(num) for num in list_of_strings]
     # return the numbers variable
-    print("Your list of numbers are:", numbers)
-    print(type(numbers))
+    return (numbers)
 
 get_numbers()
 

@@ -129,3 +129,180 @@ print(z)
 ```
 ![mv](./img/mv1.jpg)
 ![mv](./img/mv2.jpg)
+
+# List of numbers
+# define a list of numbers
+numbers = [1,2,3,4,5]
+
+# Access and print individual elements
+```
+#print(numbers[1])
+
+#print(numbers[2])
+
+#print(numbers[3])
+
+#print(numbers[0])
+
+#print(numbers[2])
+
+#print(numbers[3])
+
+print(numbers[1])
+
+print(numbers[2])
+
+print(numbers[3])
+
+print(numbers[-1])
+
+print(numbers[-2])
+
+print(numbers[-3])
+```
+![list](./img/list1.jpg)
+
+# Modify an element
+```
+numbers[-1]=3
+print(numbers)
+```
+
+# Add an element to the end
+```
+numbers.append(10)
+print(numbers)
+```
+
+# remove an element from the list
+```
+numbers.pop()
+
+print(numbers)
+
+numbers.remove(1)
+
+print(numbers)
+```
+
+# Get the length of the list
+print("print the lenght of the list")
+
+print(len(numbers))
+
+![list](./img/list2.jpg)
+
+# Iterate through the list
+```
+print("iterate through the list")
+list_of_strings = ["1", "2", "3", "4", "5"]
+list_of_numbers = [float(x) for x in list_of_strings]
+print(list_of_numbers)
+```
+![list](./img/list3.jpg)
+![list](./img/list4.jpg)
+
+## Executing string using split
+
+string_1 = "I am a boy"
+#This is a string
+
+string_2 = "2 3 4 5"                              #This is a string
+
+#list_1 = ["I" "am" "a" "boy"]                      
+#This is a list of strings
+
+#list_2 = ["2" "3" "4" "5" "6"]                     
+#This is a list of strings
+
+```
+print(string_1)
+
+print(string_1.split())
+
+print(string_2)
+
+print(string_2.split())
+
+```
+![split](./img/split.jpg)
+
+## Combination of 3 functions
+
+Function to get numbers from the user.
+def 
+
+get_numbers():
+
+
+input_string = input("Type here: ")
+
+
+list_of_strings = input_string.split()
+
+list_of_numbers = [float(num) for num in list_of_strings]
+
+return list_of_numbers
+
+list_of_numbers = get_numbers()
+
+Function to calculate the sum of a list of numbers
+
+def calculate_sum(any_list_of_number):
+    total = (sum(any_list_of_number))
+    return total
+
+total = calculate_sum(list_of_numbers)
+
+Function to display the sum to the user
+
+def display_result(number):
+
+```
+    #print(number)
+    print('The sum of {} is {}'.format(list_of_numbers, number))
+```
+
+display_result(total)
+
+![comb](./img/comb1.jpg)
+
+## Implementing Abstract
+
+#function to get numbers from the user.
+def get_numbers():
+
+input_string = input("Type here: ")
+
+list_of_strings = input_string.split()
+
+list_of_numbers = [float(num) for num in list_of_strings]
+
+return list_of_numbers
+
+
+#Function to calculate the sum of a list of numbers
+
+def calculate_sum(any_list_of_number):
+
+total = (sum(any_list_of_number))
+
+return total
+
+
+#Function to display the sum to the user
+def display_result(number):
+
+    print('The sum of numbers in our list is {}'.format(number))
+
+def main():
+
+list_of_numbers = get_numbers()
+
+total = calculate_sum(list_of_numbers)
+
+display_result(total)
+
+main()
+
+![abstract](./img/impab.jpg)
